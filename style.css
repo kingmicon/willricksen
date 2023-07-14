@@ -1,0 +1,669 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+}
+section {
+    width: 100%;
+    height: auto;
+    display: block;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    section {
+        overflow: hidden;
+    }
+}
+/**** Header *****/
+.nav {
+    background-color: rgb(160, 158, 158);
+    padding: 15px;
+    color: antiquewhite;
+    position: fixed;
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
+}
+.navbar {
+    margin-left: 10px;
+    display: inline-block;
+    
+}
+.heading {
+    display: inline-block;
+}
+.home {
+    margin-left: 280px;
+    display: inline-block;
+}
+.social-handle {
+    padding-left: 260px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(199, 15, 15) ;
+    padding-bottom: 10px;
+}
+.social-handle img {
+    background: none;
+    height: 5vh;
+    padding-left: 5px;
+}
+.link {
+    margin-left: 10px;
+    display: inline-block;
+}
+.link a {
+    padding: 8px 10px;
+    text-decoration: none;
+    color: antiquewhite;
+    float: left;
+    text-align: center;
+    font-size: 17px;
+}
+.link a:hover {
+    background-color: #ddd;
+  color: black;
+}
+.link .icon {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .link{margin: 0px;}
+    .link a:not(:first-child) {display: none;}
+    .link a.icon {
+      float: right;
+      display: block;
+    }
+    .nav {
+        display: block;
+        width: 80%;
+    }
+    .home {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .social-handle {
+        padding-left: 20px;
+    }
+    .navbar {
+        overflow: hidden;
+        display: block;
+    }
+    .heading {
+        margin-right: 0px;
+        display: block;
+        width: 10%;
+        font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .link.responsive {position: relative;}
+    .link.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .link.responsive a {
+      float: none;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .link{margin: 0px;}
+    .link a:not(:first-child) {display: none;}
+    .link a.icon {
+      float: right;
+      display: block;
+    }
+    .nav {
+        display: block;
+        width: 80%;
+    }
+    .home {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .social-handle {
+        padding-left: 20px;
+    }
+    .navbar {
+        overflow: hidden;
+        display: block;
+    }
+    .heading {
+        margin-right: 0px;
+        display: block;
+        width: 10%;
+        font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .link.responsive {position: relative;}
+    .link.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .link.responsive a {
+      float: none;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 1600px) {
+    .nav {
+        display: inline-block;
+    }
+    .home {
+        margin-left: 120px;
+        display: inline-block;
+    }
+    .social-handle img {
+        padding-top: 10px;
+    }
+}
+  /*******End of Header*******/
+  /********first slide********/
+  .slideshow-container {
+    display: block;
+    clear: both;
+    overflow: hidden;
+  }
+.firstslide1 , .firstslide2{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    
+}
+.slides img {
+    width: 100%;
+    height: 100vh;
+    top: 21%;
+    position: absolute;
+    transform:translate(-50% -50%);
+}
+.slideshow-container .slides a {
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: antiquewhite;
+    padding: 10px;
+}
+.slide-text button {
+    display: block;
+    background-color: rgb(199, 15, 15);
+    padding: 10px;
+    margin-top: 10px;
+}
+.slide-text span {
+    font-family: cursive;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.slide-text {
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: rgb(199, 15, 15);
+    animation: textup 10s linear infinite;
+    transform: translateY(98px);
+}
+.slide-text p {
+    vertical-align: baseline;
+    font-family: 'Century Gothic Pro bold',helvetica, Arial, Lucida,sans-serif;
+    font-weight: 90px;
+    font-size: 60px
+}
+.firstSlide1{
+    animation: slide1 10s linear infinite;
+}
+.firstSlide2{
+    animation: slide2 10s linear infinite;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    50%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+
+    50%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.textbox1 {
+    animation-delay: 0s;
+}
+.textbox2 {
+    animation-delay: 5s;
+}
+@media screen and (max-width: 600px) {
+    .slides img {
+        top: 50%;
+        height: 50vh;
+        width: 100%;
+    }
+    .slide-text {
+        left: 15px;
+        top: 400px;
+
+    }   
+    .slide-text p {
+        font-size: 25px;
+    }
+    .slide-text span {
+        font-size: 25px;
+    }
+    .slide-text button {
+        font-size: 12px;
+        padding: 5px;
+    }
+    .slideshow-container .slides a{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .slides img {
+        top: 50%;
+        height: 50vh;
+        width: 100%;
+    }
+    .slide-text {
+        left: 15px;
+        top: 400px;
+
+    }   
+    .slide-text p {
+        font-size: 25px;
+    }
+    .slide-text span {
+        font-size: 25px;
+    }
+    .slide-text button {
+        font-size: 12px;
+        padding: 5px;
+    }
+    .slideshow-container .slides a{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .slide-text {
+        top: 480px;
+    }
+}
+/*********End of Slide******/
+/**********Card************/
+.card {
+    margin-top: 800px;
+}
+.card2 h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    color: rgb(199, 15, 15);
+}
+.cardbody {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 550px 550px;
+    gap: 30px;
+    justify-content: center;
+}
+.card1 img {
+    width: 100%;
+    height: 100vh;
+}
+.cardtext {
+    font-size: 15px;
+    font-family: 'Questrial',Helvetica,Arial,Lucida,sans-serif;
+    background-color: rgb(199, 15, 15);
+    width: 20%;
+    height: 30vh;
+    padding: 25px;
+    text-align: left;
+    position: absolute;
+    margin-top: -280px;
+    font-weight: bolder;
+    color: #ddd;
+}
+.cardtext button {
+    padding: 15px;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: bolder;
+    color: #ddd;
+    background-color: rgb(199, 15, 15);
+    border: 2px solid black;
+}
+@media screen and (max-width: 600px) {
+    .card {
+        margin-top: 620px;
+    }
+    .cardbody {
+        margin-top: 10px;
+        display: block;
+    }
+    .card1 img {
+        height: 50vh;
+        margin-top: 15px;
+        width: 80%;
+        margin-left: 15px;
+    }
+    .cardtext {
+        font-size: 10px;
+        padding: 15px;
+        width: 40%;
+        margin-top: -250px;
+        margin-left: 15px;
+    }
+    .cardtext button{
+        padding: 6px;
+        font-size: 10px;
+    }
+    .card2 h1 {
+        font-size: 20px;
+        padding: 5px;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .card {
+        margin-top: 620px;
+    }
+    .cardbody {
+        margin-top: 10px;
+        display: block;
+    }
+    .card1 img {
+        height: 50vh;
+        margin-top: 15px;
+        width: 80%;
+        margin-left: 15px;
+    }
+    .cardtext {
+        font-size: 10px;
+        padding: 15px;
+        width: 40%;
+        margin-top: -250px;
+        margin-left: 15px;
+    }
+    .cardtext button{
+        padding: 6px;
+        font-size: 10px;
+    }
+    .card2 h1 {
+        font-size: 20px;
+        padding: 5px;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .card {
+        margin-top: 1000px;
+    }
+    .cardtext {
+        margin-top: -320px;
+    }
+}
+/*********End of card******/
+/**********Testimonial************/
+.testimonial {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    gap: 30px;
+    justify-content: center;
+}
+.testimonialcard {
+    background-color: grey;
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonialcard h1 {
+    font-size: 200px;
+    color: antiquewhite;
+}
+.testimonialcard p {
+    margin-top: -80px;
+    border: 2px solid rgb(199, 15, 15);
+    padding: 20px;
+    color: #faebd7;
+}
+.testimonialcard h2 {
+    margin-top: 35px;
+    font-size: 22px;
+    color: antiquewhite;
+}
+.testimonialcard h3 {
+    margin-top: 8px;
+    font-size: 18px;
+    color: antiquewhite;
+}
+.testimonialtext .text {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    color: rgb(199, 15, 15);
+}
+@media screen and (max-width: 600px) {
+    .testimonial {
+        display: block;
+    }
+    .testimonialcard h1 {
+        font-size: 50px;
+    }
+    .testimonialtext .text {
+        font-size: 20px;
+        width: 80%;
+    }
+    .testimonialcard {
+        width: 65%;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .testimonialcard p {
+        margin-top: -20px;
+        font-size: 10px;
+    }
+    .testimonialcard h2 {
+        font-size: 12px;
+    }
+    .testimonialcard h3{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .testimonial {
+        display: block;
+    }
+    .testimonialcard h1 {
+        font-size: 50px;
+    }
+    .testimonialtext .text {
+        font-size: 20px;
+        width: 80%;
+    }
+    .testimonialcard {
+        width: 65%;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    .testimonialcard p {
+        margin-top: -20px;
+        font-size: 10px;
+    }
+    .testimonialcard h2 {
+        font-size: 12px;
+    }
+    .testimonialcard h3{
+        font-size: 12px;
+    }
+}
+/*********End of testimonial******/
+/**********body************/
+.body {
+    margin-top: 40px;
+}
+.body img {
+    width: 100%;
+    height: 70vh;
+}
+.bodytext {
+    background-color: rgb(199, 15, 15);
+    width: 60%;
+    padding-top: 30px;
+    padding-left: 120px;
+    color: antiquewhite;
+    padding-bottom: 30px;
+    position: relative;
+    margin-top: -400px;
+}
+.bodytext h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.bodytext p {
+    margin-bottom: 20px;
+}
+.bodytext button {
+    padding: 20px;
+    font-size: 30px;
+    background-color: rgb(199, 15, 15);
+    color: antiquewhite;
+    border: 2px solid black;
+}
+@media screen and (max-width: 600px) {
+    .bodytext {
+        width: 60%;
+        padding-left: 40px;
+    }
+    .bodytext h1 {
+        font-size: 20px;
+    }
+    .bodytext p {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .bodytext button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .bodytext {
+        width: 60%;
+        padding-left: 40px;
+    }
+    .bodytext h1 {
+        font-size: 20px;
+    }
+    .bodytext p {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .bodytext button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+/*********End of body******/
+/**********footer************/
+.footer {
+    margin-top: 140px;
+    display: inline-block;
+    background-color: rgb(199, 15, 15);
+    margin-bottom: 5px;
+}
+.footerstart {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 150px;
+    display: inline-flex;
+}
+.logofooter {
+    padding: 30px;
+    color: antiquewhite;
+}
+.contact {
+    padding: 30px;
+    color: antiquewhite;
+    line-height: 30px;
+}
+.contact h1 {
+    padding-bottom: 10px;
+}
+.quicklinks {
+    padding: 30px;
+    color: antiquewhite;
+    line-height: 30px;
+}
+.quicklinks h1 {
+    padding-bottom: 10px;
+}
+.quicklinks li  a{
+    text-decoration: none;
+    color: antiquewhite;
+    margin-top: 100px;
+}
+.quicklinks li {
+    list-style: none;
+}
+.end {
+    text-align: center;
+    background-color: gray;
+    color: antiquewhite;
+    padding-top: 5px;
+}
+@media screen and (max-width: 600px) {
+    .footer {
+        margin-top: 200px;
+    }
+    .footerstart {
+        padding-left: 20px;
+        font-size: 15px;
+        display: block;
+    }
+    .end{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .footer {
+        margin-top: 200px;
+    }
+    .footerstart {
+        padding-left: 20px;
+        font-size: 15px;
+        display: block;
+    }
+    .end{
+        font-size: 10px;
+    }
+}
